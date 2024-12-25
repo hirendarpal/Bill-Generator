@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.root{
+    height: 100vh;
+    width: 100%;
+    background-image: url("nature.jpg");
+    object-fit: cover;
+    object-position: center;
+}
+
+.navbar h2{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+main{
+    height: calc(100vh-20px);
+    width: 100%;
+    margin-top: 40px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.left .input{
+    height: 35px;
+    width: 100%;
+    padding-left: 7px;
+    font-size: 1rem;
+}
+.left{
+    height: 60vh;
+    width: 25vw;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px gray;
+}
+.right{
+    margin-top: 40px;
+    height: 325px;
+    width: 300px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px gray;
+    color: white;
+    border-radius: 8px;
+}
+
+.pro-inner{
+    margin: 8px 0px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.first-h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.input[type="number"]::-webkit-inner-spin-button,
+.input[type="number"]::-webkit-outer-spin-button{
+    display: none;
+}
+
+.input{
+    border: 1px solid gray;
+}
+
+h3{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.btn{
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn button{
+    width: 29.9%;
+    padding: 10px 15px;
+    background-color: rgb(40, 136, 174);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.btn-per:disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.btn button:hover{
+    border: 1px solid orangered;
+    box-shadow: 0px 0px 10px orangered;
+}
+.selected{
+    outline: 2px solid orangered;
+    box-shadow: 0px 0px 10px orangered;
+}
+.gen-bill{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px 0px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.gen-bill:disabled{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.rig-mar{
+    margin: 50px 0px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#reset{
+    width: 80%;
+    margin-left: 9.5%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#reset:disabled{
+    cursor: not-allowed;
+}

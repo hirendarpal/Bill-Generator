@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-folder</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="root">
+        <nav class="navbar">
+            <h2>Bill Generater</h2>
+        </nav>
+        <main>
+            <div class="left">
+                <div class="bill pro-inner">
+                  <h3 class="pro-inner first-h3">Bill Generater</h3>
+                  <input type="number" placeholder="Enter Amount" class="input pro-inner" id="Amount" required>
+                </div>
+                <h3 class="pro-inner">Select Tip</h3>
+                <div class="btn pro-inner" id="container">
+                    <button class="btn-per">5%</button>
+                    <button class="btn-per">10%</button>
+                    <button class="btn-per">15%</button>
+                    <button class="btn-per">25%</button>
+                    <button class="btn-per">50%</button>
+                    <button class="btn-per">75%</button>
+                </div>
+                <input type="number" placeholder="Custom Tip" class="input pro-inner" id="custom" required>
+                <h3 class="">Number of People</h3>
+                <input type="number" placeholder="How many People" class="input pro-inner" id="person" required>
+                <button class="gen-bill pro-inner">Generate Bill</button>
+            </div>
+
+            <div class="right">
+                <div class="one rig-mar">
+                    <span>Tip Amount</span>
+                    <span id="tip-amount"></span>
+                </div>
+                <div class="one rig-mar">
+                    <span>Total</span>
+                    <span id="total"></span>
+                </div>
+                <div class="one rig-mar">
+                    <span>Each Person bill</span>
+                    <span id="each-bill"></span>
+                </div>
+                <button id="reset">Reset</button>
+            </div>
+        </main>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
